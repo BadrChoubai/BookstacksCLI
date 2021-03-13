@@ -1,19 +1,20 @@
 from Book import Book, Shelf
+from collections import defaultdict
+from Book import Shelf
+from pprint import pprint
 
 
 class Bookshelf:
-    def __init__(self, shelf: dict = {}):
-        self.shelf = {q: {} for q in ["WANT_TO_READ", "READING", "READ"]}
+    def __init__(self, shelf: dict = {}) -> object:
+        self.shelf = defaultdict(dict)
+        for q_name in Shelf.list():
+            self.shelf[q_name] = defaultdict(list)
 
-    def add_book(self, book: Book):
+    def add_book(self, book: Book) -> None:
         _shelf = self.shelf[book.shelf.value]
-        if book.author in _shelf.keys():
-            _shelf[book.author].append(book)
-        else:
-            _shelf[book.author] = []
-            self.add_book(book)
+        _shelf[book.author].append(book)
 
-    def show(self):
+    def show(self) -> None:
         for k in self.shelf.keys():
             print(k)
             for v in self.shelf[k]:
