@@ -1,0 +1,100 @@
+READ: !!python/object/apply:collections.defaultdict
+  args:
+  - &id001 !!python/name:builtins.list ''
+  dictitems:
+    Albert Camus:
+    - The Stranger
+    - The Plague
+    - The Rebel
+    - The Myth of Sisyphus
+    Andrew Mcafee:
+    - Machine | Platform | Crowd
+    Ayn Rand:
+    - The Art of Fiction
+    Bryan Caplan:
+    - The Case Against Education
+    Cal Newport:
+    - Digital Minimalism
+    - Deep Work
+    - So Good They Can't Ignore You
+    Christopher Ryan:
+    - Sex At Dawn
+    Daniel Kahneman:
+    - Thinking, Fast and Slow
+    Donella H. Meadows:
+    - 'Thinking in Systems: A Primer'
+    Fyodor Dostoevsky:
+    - Crime and Punishment
+    - The Idiot
+    Ichiro Kishimi:
+    - The Courage to be Disliked
+    Jason Fried:
+    - Rework
+    Kay Redfield Jamison:
+    - An Unquiet Mind
+    Michael Lopp:
+    - Managing Humans
+    Milo O. Frank:
+    - How To Get Your Point Across in 60 Seconds or Less
+    Nassim Nicholas Taleb:
+    - 'Antifragile: Things That Gain from Disorder'
+    - The Black Swan
+    - Fooled By Randomness
+    - Skin in the Game
+    Peter Thiel:
+    - Zero to One
+    Ray Dalio:
+    - Principles
+    Sebastian Junger:
+    - Tribe
+    Seth Stephens-Davidowitz:
+    - Everybody Lies
+    Simon Sinek:
+    - The Infinite Game
+    - Leaders Eat Last
+    Tara Westover:
+    - Educated
+    Viktor E. Frankl:
+    - Man's Search for Meaning
+READING: !!python/object/apply:collections.defaultdict
+  args:
+  - *id001
+  dictitems:
+    Ayn Rand:
+    - 'Philosophy: Who Needs It'
+    - Atlas Shrugged
+    Friedrich Nietzsche:
+    - Thus Spoke Zarathustra
+    Fyodor Dostoevsky:
+    - The Brothers Karamazov
+    Max Tegmark:
+    - Life 3.0
+    Steve Blank:
+    - The Four Steps to the Epiphany
+    Tim Wu:
+    - The Master Switch
+    Will Larson:
+    - "An Elegent Puzzle \u2014 Systems of Engineering Management"
+WANT_TO_READ: !!python/object/apply:collections.defaultdict
+  args:
+  - *id001
+  dictitems:
+    Ayn Rand:
+    - The Fountainhead
+    Cal Newport:
+    - A World Without Email
+    Gary Taubes:
+    - 'Good Calories, Bad Calories: Fats, Carbs, and the Controversial Science of
+      Diet and Health'
+    Greg Egan:
+    - Permutation City
+    Henry David Thoreau:
+    - Walden
+    John Stuart Mill:
+    - On Liberty, Utilitarianism and Other Essays
+    Leo Tolstoy:
+    - Anna Karenina
+    NATO:
+    - Emergency War Surgery
+    Sebastian Junger:
+    - War

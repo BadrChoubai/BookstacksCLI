@@ -13,6 +13,7 @@ class Bookshelf:
     def add_book(self, book: Book) -> None:
         _shelf = self.shelf[book.shelf.value]
         _shelf[book.author].append(book)
+        print(f"{book.title} by {book.author} add to shelf: {book.shelf}")
 
     def show(self) -> None:
         for k in self.shelf.keys():
