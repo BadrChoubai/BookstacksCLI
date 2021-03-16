@@ -25,6 +25,23 @@ def add_book(
         file_handler = FileHandler(path)
         rows = file_handler.open()
         [bookstack.add_book(book) for book in [Book.from_str(row) for row in rows]]
+    else:
+        print("Enter the following information for a book you'd like to add.")
+        author, title, shelf = (
+            input("New book author: "),
+            input("New book title: "),
+            input(f"- (W)ant to read\n- (R)eading\n- R(e)ad\nAdd new book to shelf: "),
+        )
+
+        bookstack.add_book(
+            Book(
+                author,
+                title,
+                ({"w": "WANT_TO_READ", "r": "READING", "e": "READ"}[shelf.lower()]),
+            )
+        )
+
+    show()
 
 
 @cli.command()
