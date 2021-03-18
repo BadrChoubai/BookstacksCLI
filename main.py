@@ -23,8 +23,10 @@ def add_book(
         assert os.path.exists(path), "File not found at %s" % path
 
         file_handler = FileHandler(path)
-        rows = file_handler.open()
-        [bookstack.add_book(book) for book in [Book.from_str(row) for row in rows]]
+
+        data = file_handler.read()()
+
+        [bookstack.add_book(book) for book in [Book.from_str(item) for item in data]]
     else:
         print("Enter the following information for a book you'd like to add.")
         author, title, shelf = (

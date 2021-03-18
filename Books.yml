@@ -1,7 +1,4 @@
-READ: !!python/object/apply:collections.defaultdict
-  args:
-  - &id001 !!python/name:builtins.list ''
-  dictitems:
+READ: 
     Albert Camus:
     - The Stranger
     - The Plague
@@ -56,10 +53,7 @@ READ: !!python/object/apply:collections.defaultdict
     - Educated
     Viktor E. Frankl:
     - Man's Search for Meaning
-READING: !!python/object/apply:collections.defaultdict
-  args:
-  - *id001
-  dictitems:
+READING: 
     Ayn Rand:
     - 'Philosophy: Who Needs It'
     - Atlas Shrugged
@@ -74,11 +68,8 @@ READING: !!python/object/apply:collections.defaultdict
     Tim Wu:
     - The Master Switch
     Will Larson:
-    - "An Elegent Puzzle \u2014 Systems of Engineering Management"
-WANT_TO_READ: !!python/object/apply:collections.defaultdict
-  args:
-  - *id001
-  dictitems:
+    - "An Elegant Puzzle \u2014 Systems of Engineering Management"
+WANT_TO_READ: 
     Ayn Rand:
     - The Fountainhead
     Cal Newport:
